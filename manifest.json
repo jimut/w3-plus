@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+
+    "name": "W3 Plus",
+    "description": "Sugar for W3 Docs",
+    "version": "0.0.1",
+
+    "icons": {
+        "128": "icon_128.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.w3.org/*.txt"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
